@@ -111,7 +111,7 @@
 
 	// Logpush — emit trace events for Logpush to capture and send to R2.
 	// Requires Workers Paid plan ($5/month).
-	"logpush": true,
+	"logpush": false,
 
 	// Workers Logs — short-retention live tail in the Cloudflare dashboard.
 	"observability": {
@@ -127,27 +127,6 @@
 				"**/*.sh"
 			],
 			"fallthrough": true
-		}
-	],
-
-	// R2 buckets. The Deploy-to-Cloudflare button creates these automatically;
-	// setup.sh creates them via `wrangler r2 bucket create`.
-	"r2_buckets": [
-		// Long-term audit log storage via Logpush.
-		{
-			"binding": "mcp4acumatica_logs",
-			"bucket_name": "mcp4acumatica-logs",
-			"remote": true
-		},
-		// Schema-knowledge indexes (schema-index.json, etc.) read by the
-		// acumatica_search_schema / _get_schema_entity / _list_schema_entities
-		// tools. Built offline by scripts/ and uploaded with `npm run upload-index`
-		// (or auto by setup.sh after deploy when swagger.json is present).
-		// Optional — those tools degrade gracefully when this is empty.
-		{
-			"binding": "INDEX_STORE",
-			"bucket_name": "mcp4acumatica-index",
-			"remote": true
 		}
 	]
 }
