@@ -17,7 +17,7 @@
 // Cloudflare dashboard:
 //   Workers & Pages → mcp4acumatica → Settings → Variables and Secrets
 {
-	"name": "mcp4acumatica",
+	"name": "mcp4acumatica-test",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-03-01",
 	"compatibility_flags": [
@@ -29,7 +29,7 @@
 	// (or leave the placeholders and override via the dashboard after deploy).
 	"vars": {
 		"ACUMATICA_URL": "https://ecofinishcoatings.acumatica.com",
-		"ACUMATICA_TENANT": "ecoFinish Prod",
+		"ACUMATICA_TENANT": "ecoFinish Test",
 		"ACUMATICA_ENDPOINT_VERSION": "25.200.001",
 		"ACUMATICA_ENDPOINT_NAME": "Default",
 		"ACUMATICA_MAX_RECORDS": "1000",
@@ -54,11 +54,11 @@
 	"kv_namespaces": [
 		{
 			"binding": "TOKEN_STORE",
-			"id": "885c7210bb004e689be70a72f4a6a93e"
+			"id": "88a05fd875d04b1a86dbb71d96455d43"
 		},
 		{
 			"binding": "OAUTH_KV",
-			"id": "43e3bb79a4c24d668a4e686c34d1aaa5"
+			"id": "ac14300147b546b589dd52d51c7ea0f5"
 		}
 	],
 
