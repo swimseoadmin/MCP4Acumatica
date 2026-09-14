@@ -1,3 +1,5 @@
+// ===== TEST BRANCH — deploys the mcp4acumatica-test worker against the
+// ===== "ecoFinish Test" tenant. Do not merge this branch into main.
 // MCP4Acumatica — Cloudflare Workers configuration
 //
 // This file is the deployment template. Two install paths use it:
