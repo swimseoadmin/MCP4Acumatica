@@ -54,11 +54,11 @@
 	"kv_namespaces": [
 		{
 			"binding": "TOKEN_STORE",
-			"id": ""
+			"id": "885c7210bb004e689be70a72f4a6a93e"
 		},
 		{
 			"binding": "OAUTH_KV",
-			"id": ""
+			"id": "43e3bb79a4c24d668a4e686c34d1aaa5"
 		}
 	],
 
